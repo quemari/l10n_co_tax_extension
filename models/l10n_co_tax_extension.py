@@ -87,7 +87,7 @@ class AccountInvoice(models.Model):
 	
 	amount_without_wh_tax = fields.Monetary('Total With Tax', store="True",compute="_compute_amount")
 	wh_taxes = fields.Float(string="Withholding Tax", store=True, compute="_compute_amount")
-	date_invoice = fields.Date(required=True)
+	date_invoice = fields.Date(required=True, copy=True,)
 	not_has_valid_dian = fields.Boolean(compute='_get_has_valid_dian_info_JSON')
 	resolution_number = fields.Char('Resolution number in invoice')
 	resolution_date = fields.Date()
