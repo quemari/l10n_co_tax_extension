@@ -91,10 +91,10 @@
                         <strong>Código Cliente:</strong>
                         <span class="m-0" t-field="o.partner_id.ref"/>
 	                </div>
-	                <!--div name="reference" t-if="o.reference">
+	                <div name="reference" t-if="o.reference">
                         <strong>Reference:</strong>
                         <p class="m-0" t-field="o.reference"/>
-                    </div-->
+                    </div>
                     <div>
                      <strong>Comercial: </strong> 
                      <span class="m-0" t-field="o.user_id"/>
