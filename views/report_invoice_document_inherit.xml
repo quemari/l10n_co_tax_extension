@@ -192,7 +192,7 @@
 
 	    <xpath expr="//div[@class='clearfix']" position="replace">
 	 		<div style="border:1px solid black" id="GRUPO_TOTAL">
-	 		<div class="row" id="total" >
+	 		<div class="row">
 	          	<div class="col-7">
 	              <table class="table table-condensed" t-if="o.tax_line_ids and o.at_least_one_tax_group_enabled()">
 	                <thead>
@@ -218,7 +218,8 @@
 	                  </table>
 	             </div>
 
-				<div class="col-5">
+				<div class="col-5" id="total">
+					<div>
 	                <table class="table table-sm">
 	                    <tr class="border-black">
 	                    	<td><strong>Subtotal</strong></td>
@@ -241,6 +242,7 @@
 	                        </td>
 	                    </tr>
 	                </table>
+	            </div>
 	            </div>
 	        </div>
 	         <div>
