@@ -282,9 +282,9 @@
 		</xpath>
 
      	<xpath expr="//p[@t-if='o.reference']" position="replace">
-	        <p t-if="o.reference">
+	        <!--p t-if="o.reference">
 	        Por favor utilice la siguiente referencia para su pago : <span t-field="o.reference"/>
-	       	</p>
+	       	</p-->
     	</xpath>
 
  		
